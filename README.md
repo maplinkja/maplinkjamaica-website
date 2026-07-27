@@ -7,7 +7,7 @@ Official static website for **MapLink JA**.
 - `index.html` — homepage
 - `css/style.css` — site design and responsive styling
 - `js/main.js` — mobile navigation, animations, and visibility checker
-- `images/maplink-ja-logo.png` — supplied business logo
+- `images/maplink-ja-logo-horizontal.png` — supplied business logo
 
 ## Before launch
 
