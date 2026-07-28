@@ -108,15 +108,15 @@ select {
 }
 
 .logo img {
-  height: 60px;
+  height: 80px;
   width: auto;
-  max-width: 260px;
+  max-width: 340px;
 }
 
 @media (max-width: 768px) {
   .logo img {
-    height:50px;
-    max-width: 220px;
+    height:65px;
+    max-width: 280px;
   }
 }
 
