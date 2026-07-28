@@ -158,6 +158,19 @@ select {
   padding-block: 110px;
 }
 
+.logo img {
+  height: 80px;
+  width: auto;
+  max-width: 340px
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 65px;
+    max-width: 280px;
+  }
+}
+
 .eyebrow {
   display: inline-block;
   text-transform: uppercase;
