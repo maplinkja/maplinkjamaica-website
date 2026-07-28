@@ -107,19 +107,6 @@ select {
   color: var(--gold);
 }
 
-.logo img {
-  height: 80px;
-  width: auto;
-  max-width: 340px;
-}
-
-@media (max-width: 768px) {
-  .logo img {
-    height:65px;
-    max-width: 280px;
-  }
-}
-
 .menu-toggle {
   display: none;
   background: none;
