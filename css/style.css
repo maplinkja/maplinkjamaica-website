@@ -165,9 +165,9 @@ select {
 }
 
 @media (max-width: 768px) {
-  .logo img {
-    height: 65px;
-    max-width: 280px;
+  .brand img {
+    width: 230px;
+    max-height: 70px;
   }
 }
 
@@ -814,10 +814,10 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .brand img {
-    width: 230px
-    max-height: 70px
+  .nav-wrap {
+    max-height: 90px
   }
+}
 
   .site-nav {
     display: none;
