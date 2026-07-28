@@ -86,7 +86,7 @@ select {
 
 .brand img {
   width: 300px;
-  max-height: 85px;
+  max-height: 100px;
   object-fit: contain;
 }
 
@@ -803,7 +803,7 @@ h3 {
 @media (max-width: 960px) {
   .brand img {
     width: 230px
-    max-height: 70px
+    max-height: 90px
   }
 
   .site-nav {
