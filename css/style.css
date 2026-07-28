@@ -77,7 +77,7 @@ select {
 }
 
 .nav-wrap {
-  min-height: 100px;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,8 +85,8 @@ select {
 }
 
 .brand img {
-  width: 300px;
-  max-height: 200px;
+  width: 178px;
+  max-height: 60px;
   object-fit: contain;
 }
 
@@ -862,9 +862,8 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .brand img {
-    width: 230px;
-    max-height:70px
+  .nav-wrap {
+    max-height:90px
   }
 
   .hero-content {
