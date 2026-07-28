@@ -803,7 +803,7 @@ h3 {
 @media (max-width: 960px) {
   .brand img {
     width: 230px
-    max-height: 150px
+    max-height: 300px
   }
 
   .site-nav {
@@ -861,9 +861,10 @@ h3 {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .brand img {
-    width: 145px;
+    width: 230px;
+    max-height:100px
   }
 
   .hero-content {
