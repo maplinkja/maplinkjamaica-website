@@ -77,17 +77,35 @@ select {
 }
 
 .nav-wrap {
-  min-height: 100px;
+  min-height: 112px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
 
+/* Official horizontal logo.
+   The source PNG contains generous transparent space, so the brand link acts
+   as a clean viewing window while the image is enlarged inside it. */
+.brand {
+  position: relative;
+  display: block;
+  flex: 0 0 360px;
+  width: 360px;
+  height: 100px;
+  overflow: hidden;
+}
+
 .brand img {
-  width: 300px;
-  max-height: 85px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: auto;
+  max-width: none;
+  max-height: none;
   object-fit: contain;
+  transform: translate(-50%, -50%);
 }
 
 .site-nav {
@@ -156,19 +174,6 @@ select {
   gap: 56px;
   align-items: center;
   padding-block: 110px;
-}
-
-.logo img {
-  height: 80px;
-  width: auto;
-  max-width: 340px
-}
-
-@media (max-width: 768px) {
-  .brand img {
-    width: 230px;
-    max-height: 70px;
-  }
 }
 
 .eyebrow {
@@ -813,16 +818,15 @@ h3 {
   transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-  .nav-wrap {
-    max-height: 90px
+@media (max-width: 960px) {
+  .menu-toggle {
+    display: block;
   }
-}
 
   .site-nav {
     display: none;
     position: absolute;
-    top: 78px;
+    top: 100%;
     left: 0;
     right: 0;
     padding: 22px 16px 28px;
@@ -874,9 +878,36 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 641px) and (max-width: 960px) {
   .nav-wrap {
-    max-height:90px
+    min-height: 104px;
+  }
+
+  .brand {
+    flex-basis: 300px;
+    width: 300px;
+    height: 90px;
+  }
+
+  .brand img {
+    width: 390px;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-wrap {
+    min-height: 96px;
+    gap: 14px;
+  }
+
+  .brand {
+    flex-basis: 250px;
+    width: 250px;
+    height: 84px;
+  }
+
+  .brand img {
+    width: 330px;
   }
 
   .hero-content {
@@ -1034,7 +1065,7 @@ h3 {
   text-align: right;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .approved-home-visual,
   .approved-home-visual img {
     min-height: 350px;
