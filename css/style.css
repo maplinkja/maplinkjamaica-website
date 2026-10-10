@@ -90,8 +90,8 @@ select {
 .brand {
   position: relative;
   display: block;
-  flex: 0 0 360px;
-  width: 360px;
+  flex: 0 0 420px;
+  width: 420px;
   height: 100px;
   overflow: hidden;
 }
